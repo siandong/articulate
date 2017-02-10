@@ -37,6 +37,7 @@ public class ArticulateController {
 	@RequestMapping("/")
 	public String index(HttpServletRequest request, Model model) throws Exception {
 		addAppEnv(request,model);
+		
 		return "index";
 	}
 
