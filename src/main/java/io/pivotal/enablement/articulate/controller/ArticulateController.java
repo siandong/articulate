@@ -45,7 +45,8 @@ public class ArticulateController {
 
 		addAppEnv(request, model);
 
-		if (doit) {
+		if (doit) { 
+			
 			model.addAttribute("killed", true);
 			logger.warn("*** The system is shutting down. ***");
 			Runnable killTask = () -> {
